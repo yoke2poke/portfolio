@@ -1,0 +1,85 @@
+#Projects{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 7%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+#Projects h1{
+    font-size: 64px;
+    letter-spacing: 1px;
+}
+#Projects p{
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.cards{
+    margin-top:40px;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     gap: 100px;
+     cursor: pointer;
+     padding: 50px;
+    
+}
+.card-face-one{
+    width:100%;
+    max-width: 400px;
+    height:390px;
+    background-position: center;
+    transform: translateY(200px);
+    transition: all 0.5s ease-in-out;
+    border-radius:20px 30px 0 0;
+    box-shadow:10px 10px 20px #babecc,-10px -10px 20px #ffffff;
+    
+}
+.card-face-two{
+    margin-top: 50px;
+    width: 550px;
+    height:160px ;
+    background-color:rgba(0, 132, 255, 0.377);
+    border-radius:0 0 20px 20px;
+    box-shadow:10px 10px 20px #babecc,-10px -10px 20px #ffffff;
+    
+}
+.card-face-one:hover{
+    transform: translateY(0);
+   
+
+    
+}
+.card-face-one img:hover{
+    filter: grayscale(0);
+    transform: scale(1.0);
+}
+.card-face-two h2{
+    padding-top:40px;
+}
+.card-face-one img{
+    height: 400px;
+    max-width: 550px;
+    border-radius:30px  30px 0 0;
+    overflow: hidden;
+    filter: grayscale(1);
+    transition: transform 0.70s ease-out,filter 0.50s ease-out;
+}
+.card-face-one a{
+  margin-left: 150px;
+  font-size: 22px;
+  text-decoration: none;
+  color:red;
+  margin-top: 0;
+}
+
+.blue-line2{
+    height: 8px;
+    width: 182px;
+    border-radius: 5px;
+    background-color: #1179c4;
+    margin-top: 20px;
+  } 
+

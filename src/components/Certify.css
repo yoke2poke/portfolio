@@ -1,0 +1,70 @@
+#Certify{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#Certify h1{
+  padding: 20px;
+  font-size: 64px;
+  letter-spacing: 2px;
+}
+.Certify h2{
+    padding: 10px;
+    font-size:28px;
+    letter-spacing: 2px;
+    
+  }
+  .blu-line{
+    background-color:  #1179c4;
+    height: 10px;
+    width: 180px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  
+  .certificate{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .certificate .certis{
+    transform: rotateY('180deg');
+  }
+  .certis{
+    height: 400px;
+    width: 400px;
+    margin-top: 10%;
+    justify-content: space-around;
+    background-color: #1179c4;
+    border-radius: 50%;
+    transition: 1s ease-in-out all;
+  }
+
+  .certis img{
+   height: 400px;
+   width: 400px;
+   object-fit: cover;
+   border-radius: 50%;
+   padding: 8px;
+   transition: 0.5s ease-in-out all;
+  }
+  .certis:hover{
+    border-radius: 0;
+   box-shadow:  0 5px 12px #1179c4,0 -5px 12px #1179c4;
+  }
+  .certis img:hover{
+    border-radius: 0;
+  }
+  

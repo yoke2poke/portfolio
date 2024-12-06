@@ -1,0 +1,131 @@
+nav {
+  height: 100%;
+  max-height: 120px;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+  display: flex;
+  padding: 4px;
+  align-items: center;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 100;
+  gap: 2%;
+  box-shadow: 0px 2px 4px black;
+  transition: 0.5s ease-in;
+}
+nav h1 {
+  font-size: 42px;
+  margin-left: 64px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.37),
+    white 35%,
+    rgba(128, 128, 128, 0.685)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+nav ul li {
+  margin-right: 30px;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+nav ul li.open {
+  display: block;
+}
+.hambuger-menu {
+  position: absolute;
+  right: 30px;
+}
+#hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  width: 70px;
+  justify-content: flex-end;
+}
+.bar {
+  background-color: white;
+  height: 8px;
+  width: 140px;
+  display: none;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3 ease;
+}
+nav a {
+  color: white;
+  font-size: 26px;
+  list-style: none;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.37),
+    white 35%,
+    rgba(128, 128, 128, 0.685)
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s linear infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+#nav a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  min-height: 5px;
+  max-width: 70px;
+  bottom: 10px;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transition: transform 0.3s linear;
+}
+#nav a:hover::before {
+  transform: scaleX(1);
+}
+nav.active {
+  background-color: white;
+  transition: 0.5s ease-in-out;
+  color: #1179c4;
+  margin: 0;
+  height: 100px;
+}
+
+#nav.active a::before {
+  background-color: #1179c4;
+}
+
+#cancel {
+  height: 200px;
+  width: 200px;
+  display: none;
+}

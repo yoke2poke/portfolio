@@ -1,0 +1,251 @@
+#Contact {
+  max-height: 350vh;
+  width: 100%;
+  background-image: url(../assets/overlay.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 15%;
+}
+.contact-bg {
+  background-color: #0077ff8a;
+  height: 100%;
+  max-height: 350vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.contact-content {
+  background-color: white;
+  height: 100%;
+  max-height: 180%;
+  width: 100%;
+  max-width: 85%;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.inner-content {
+  margin-left: 8%;
+  width: 100%;
+  max-width: 600px;
+}
+.inner-content h1 {
+  margin-top: 100px;
+  font-size: 48px;
+  margin-left: 22px;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.input-group input {
+  padding: 30px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 24px;
+}
+.input-group input:focus {
+  box-shadow: 0px 5px 15px #1179c4;
+}
+.input-group textarea {
+  height: 150px;
+  border-radius: 5px;
+  font-size: 24px;
+  outline: none;
+  padding: 20px;
+}
+#btn {
+  padding: 40px;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 20px;
+  background-color: #1179c4;
+  border: none;
+  border-radius: 40px;
+  margin-top: 30px;
+  color: white;
+  font-size: 25px;
+  height: 80px;
+
+  margin-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: -30px;
+}
+.outer-content {
+  float: right;
+  width: 100%;
+  max-width: 600px;
+  margin-left: 100px;
+}
+.outer-content h1 {
+  margin-top: 100px;
+  font-size: 48px;
+}
+.outer-content p {
+  margin-top: 64px;
+  font-size: 20px;
+}
+.loadcity {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+#location {
+  height: 30px;
+  width: 50px;
+  margin-top: 50px;
+  display: inline-block;
+  color: #1179c4;
+}
+#call {
+  height: 30px;
+  width: 50px;
+  margin-top: 50px;
+  display: inline-block;
+  color: #1179c4;
+}
+#mail {
+  height: 30px;
+  width: 50px;
+  margin-top: 50px;
+  display: inline-block;
+  color: #1179c4;
+}
+.loadcity p {
+  margin-left: 70px;
+  margin-top: -33px;
+}
+.insta {
+  margin-top: 100px;
+  margin-left: -20px;
+  display: flex;
+}
+.insta a {
+  display: block;
+}
+.insta #whats {
+  position: relative;
+  transition: 0.5s;
+}
+.insta #instagram {
+  position: relative;
+  transition: 0.5s;
+}
+.insta #linkedin {
+  position: relative;
+  transition: 0.5s;
+}
+.insta #github {
+  position: relative;
+  transition: 0.5s;
+}
+
+#whats {
+  height: 50px;
+  width: 50px;
+  margin-left: 32px;
+  border: 6px solid #1179c4;
+  padding: 20px;
+  border-radius: 50%;
+  color: black;
+}
+#instagram {
+  height: 50px;
+  width: 50px;
+  margin-left: 32px;
+  border: 6px solid #1179c4;
+  padding: 20px;
+  border-radius: 50%;
+  color: black;
+}
+#linkedin {
+  height: 50px;
+  width: 50px;
+  margin-left: 32px;
+  border: 6px solid #1179c4;
+  padding: 20px;
+  border-radius: 50%;
+  color: black;
+}
+#github {
+  height: 50px;
+  width: 50px;
+  margin-left: 32px;
+  border: 6px solid #1179c4;
+  padding: 20px;
+  border-radius: 50%;
+  color: black;
+}
+.insta a #whats:hover {
+  color: #fff;
+  transform: rotateY(360deg);
+  background-color: #25d366;
+  border: 6px solid white;
+  box-shadow: 0px 5px 8px#25d366;
+}
+.insta a #instagram:hover {
+  color: #fff;
+  transform: rotateY(360deg);
+  background-color: rgb(253, 31, 153);
+  border: 6px solid white;
+  box-shadow: 0px 5px 8px rgb(253, 31, 153);
+}
+.insta a #linkedin:hover {
+  color: #fff;
+  transform: rotateY(360deg);
+  background-color: #0a66c2;
+  border: 6px solid white;
+  box-shadow: 0px 5px 8px #0a66c2;
+}
+.insta a #github:hover {
+  color: #fff;
+  transform: rotateY(360deg);
+  background-color: black;
+  border: 6px solid white;
+  box-shadow: 0px 5px 8px black;
+}
+#top {
+  position: fixed;
+  background-color: #1179c4;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  bottom: 20px;
+  right: 30px;
+  color: white;
+  text-decoration: none;
+}
+.error {
+  color: red;
+}
+#arrow {
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+  color: white;
+}
+.blue-line4 {
+  height: 8px;
+  width: 182px;
+  border-radius: 5px;
+  background-color: #1179c4;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.blue-line5 {
+  height: 8px;
+  width: 182px;
+  border-radius: 5px;
+  background-color: #1179c4;
+  margin-top: 20px;
+  margin-left: 10px;
+}

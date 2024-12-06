@@ -1,0 +1,65 @@
+.experience{
+  height:100%;
+   width:100%;
+  
+}
+
+.overlay-bg{
+    
+ background-image: url(../assets/counters-bg.jpg);
+ height: 700px;
+ width: 100%;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ margin-top: 15%;
+ object-fit: cover;
+ background-attachment: fixed;
+ 
+
+}
+.overlay-blue{
+    background-color: #0077ff8a;
+    position: absolute;
+    height: 700px;
+    width: 100%;
+    margin-top:0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.wrapper{
+  color: white;
+  text-align: center;
+  font-size: 26px; 
+}
+#checkmark{
+  height: 50px;
+  width: 50px;
+  border: 15px solid white;
+  border-radius: 50%;
+  padding: 30px;
+}
+#calendar{
+  height: 50px;
+  width: 50px;
+  border: 15px solid white;
+  border-radius: 50%;
+  padding: 30px;
+}
+#people{
+  height: 50px;
+  width: 50px;
+  border: 15px solid white;
+  border-radius: 50%;
+  padding: 30px;
+}
+#medal{
+  height: 50px;
+  width: 50px;
+  border: 15px solid white;
+  border-radius: 50%;
+  padding: 30px;
+}

@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f3f2ed;
+  font-family: "Poppins", "san-serif";
+  touch-action: manipulation;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.445);
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  isolation: isolate;
+}
+
+@media all and (max-width: 800px) {
+  body {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 400%;
+    overflow-x: none;
+  }
+  .root {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
+  nav {
+    max-height: 250px;
+    flex-direction: column;
+  }
+  nav h1 {
+    font-size: 130px;
+    margin-top: 40px;
+    align-self: flex-start;
+  }
+  nav ul li {
+    display: none;
+    padding-bottom: 0px;
+  }
+
+  nav a {
+    font-size: 70px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  nav.active {
+    background-color: white;
+    transition: 0.5s ease-in-out;
+    color: #1179c4;
+    margin: 0;
+    height: 100%;
+    max-height: 870px;
+  }
+  #nav a::before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    min-height: 5px;
+    max-width: 200px;
+    bottom: 10px;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transition: transform 0.3s linear;
+  }
+  #hamburger {
+    position: absolute;
+    right: 180px;
+    top: 160px;
+  }
+
+  .bar {
+    display: block;
+    height: 8px;
+  }
+  #Home {
+    min-height: 400vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .overlay {
+    min-height: 400vh;
+    min-width: 400%;
+    width: 100%;
+  }
+  .text {
+    font-size: 70px;
+  }
+  #About {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .container {
+    margin-top: 150px;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .first-half {
+    max-width: 90%;
+    padding-right: 100px;
+    margin-left: 100px;
+  }
+  .first-half img {
+    margin-left: 40px;
+    margin-bottom: 30px;
+    height: 800px;
+    min-width: 600px;
+  }
+  .skills {
+    margin-top: 50px;
+  }
+  .skill {
+    height: 70px;
+    font-size: 22px;
+    margin-left: -90px;
+    max-width: 1200px;
+    width: 100%;
+  }
+
+  .skills h1 {
+    margin-left: -70px;
+    font-size: 80px;
+  }
+  .html {
+    height: 25px;
+    min-width: 160%;
+  }
+  .css {
+    height: 25px;
+    min-width: 160%;
+  }
+  .java {
+    height: 25px;
+    min-width: 160%;
+  }
+  .react {
+    height: 20px;
+    min-width: 160%;
+  }
+  .second-half {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding-left: 70px;
+    min-width: 90%;
+    width: 100%;
+  }
+  .second-half h1 {
+    font-size: 60px;
+  }
+  .second-half p {
+    font-size: 48px;
+    padding-right: 30px;
+    width: 100%;
+  }
+  #services {
+    width: 100%;
+    margin-top: 20%;
+    padding-bottom: 50px;
+  }
+  #services h1 {
+    font-size: 80px;
+  }
+  #services p {
+    font-size: 40px;
+  }
+  .service {
+    width: 100%;
+    margin-top: 20%;
+    max-width: 1200px;
+  }
+  #desktop-outline {
+    height: 150px;
+    width: 150px;
+    margin-top: 55px;
+    padding: 40px;
+  }
+  #phone-outline {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+    margin-top: 55px;
+    padding: 40px;
+  }
+  #code-working {
+    height: 150px;
+    width: 150px;
+    margin-top: 55px;
+    padding: 40px;
+  }
+  .experience {
+    margin-top: 100px;
+  }
+  .wrapper p {
+    font-size: 50px;
+  }
+  .wrapper h3 {
+    font-size: 50px;
+  }
+
+  .overlay-bg {
+    min-width: 400%;
+    min-height: 200vh;
+    width: 100%;
+    background-attachment: fixed;
+  }
+  .overlay-blue {
+    min-width: 400%;
+    min-height: 200vh;
+    width: 100%;
+  }
+  #checkmark {
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+  }
+  #calendar {
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+  }
+  #people {
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+  }
+  #medal {
+    height: 200px;
+    width: 200px;
+  }
+  #Projects {
+    margin-top: 30%;
+  }
+  #Projects h1 {
+    font-size: 100px;
+  }
+  #Projects p {
+    font-size: 30px;
+  }
+  .cards {
+    width: 100%;
+  }
+  .card {
+    width: 700px;
+    margin-right: 180px;
+  }
+  .card-face-one {
+    height: 800px;
+    min-width: 900px;
+  }
+  .card-face-one img {
+    height: 800px;
+    min-width: 900px;
+  }
+  .card-face-two {
+    min-height: 140px;
+    min-width: 900px;
+    padding-bottom: 40px;
+  }
+  .card-face-one a {
+    font-size: 35px;
+    margin-right: 140px;
+  }
+  .card-face-two h2 {
+    font-size: 30px;
+  }
+  #Certify {
+    margin-top: 20%;
+    width: 100%;
+  }
+  #Certify h1 {
+    font-size: 80px;
+  }
+  #Certify h2 {
+    font-size: 30px;
+  }
+  .certificate {
+    width: 100%;
+    padding: 200px;
+  }
+  .certis {
+    height: 800px;
+    width: 800px;
+    margin-top: 80px;
+  }
+  .certis img {
+    height: 800px;
+    width: 800px;
+  }
+  #Contact {
+    max-height: 340vh;
+    margin-top: 30%;
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .contact-bg {
+    padding: 100px;
+    max-height: 340vh;
+  }
+  .contact-content {
+    padding-bottom: 50px;
+  }
+  #form h1 {
+    font-size: 60px;
+  }
+  .outer-content h1 {
+    font-size: 60px;
+    margin-top: 0;
+  }
+  #whats {
+    height: 100px;
+    width: 100px;
+  }
+  #instagram {
+    height: 100px;
+    width: 100px;
+  }
+  #linkedin {
+    height: 100px;
+    width: 100px;
+  }
+  #github {
+    height: 100px;
+    width: 100px;
+  }
+  #arrow {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    border: #f3f2ed 2px solid;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #1179c4;
+  }
+}
+@media all and (min-width: 801px) {
+  nav a {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  #Home {
+    background-attachment: fixed;
+  }
+  .text {
+    font-size: 30px;
+  }
+  .first-half {
+    width: 380px;
+    height: 800px;
+  }
+  .first-half img {
+    height: 200px;
+    width: 200px;
+  }
+  .second-half {
+    width: 400px;
+    margin-left: 50px;
+  }
+  .second-half h1 {
+    width: 300px;
+  }
+  .second-half p {
+    font-size: 18px;
+    width: 100%;
+    margin-left: 0;
+    max-width: 400px;
+  }
+  .skills {
+    margin-top: 64px;
+    margin-left: 40px;
+    width: 300px;
+  }
+  .html {
+    height: 10px;
+    width: 300px;
+  }
+  .css {
+    height: 10px;
+    width: 300px;
+  }
+  .java {
+    height: 10px;
+    width: 300px;
+  }
+  .react {
+    height: 10px;
+    width: 300px;
+  }
+  .container {
+    width: 100%;
+    max-width: 80%;
+    margin-top: 200px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  #insta {
+    margin-bottom: 180px;
+  }
+  #services h1 {
+    font-size: 48px;
+  }
+  .service {
+    height: 500px;
+    max-width: 300px;
+    width: 100%;
+  }
+  .service p {
+    font-size: 12px;
+  }
+  #desktop-outline {
+    height: 40px;
+    width: 40px;
+  }
+  #code-working {
+    height: 40px;
+    width: 40px;
+  }
+  #phone-outline {
+    height: 40px;
+    width: 40px;
+  }
+  #checkmark {
+    height: 30px;
+    width: 30px;
+  }
+  #calendar {
+    height: 30px;
+    width: 30px;
+  }
+  #people {
+    height: 30px;
+    width: 30px;
+  }
+  #medal {
+    height: 30px;
+    width: 30px;
+  }
+  .card-face-one {
+    height: 400px;
+  }
+  .card-face-two {
+    height: 160px;
+    width: 400px;
+  }
+  .card-face-one img {
+    width: 400px;
+  }
+  .card-face-two h2 {
+    font-size: 25px;
+    margin-top: 0;
+  }
+  .card-face-two p {
+    font-size: 10px;
+    margin-top: 0;
+  }
+  .card-face-one a {
+    text-align: center;
+    margin-left: 0;
+  }
+  .cards {
+    gap: 30px;
+  }
+  .certis {
+    height: 350px;
+    width: 350px;
+  }
+  .certis img {
+    height: 350px;
+    width: 350px;
+  }
+  .inner-content {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .input-group input {
+    padding: 20px;
+    width: 420px;
+  }
+  .input-group textarea {
+    width: 420px;
+  }
+  .outer-content {
+    margin-left: 50px;
+    max-width: 520px;
+    width: 100%;
+    margin-top: 0;
+    height: 1211px;
+  }
+  .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #insta {
+    height: 40px;
+    margin-left: 0px;
+  }
+}
